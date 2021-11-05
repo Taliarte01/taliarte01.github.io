@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minha página com Canvas</title>
   </head>
+  <style>
+    /* #paper {
+      background-image: url('imagens/montanhas.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    } */
+  </style>
   <body>
-    <canvas id="paper" width="500" height="500"></canvas>
+    <canvas id="paper" width="500" height="500"> </canvas>
   </body>
 
   <script>
@@ -15,8 +22,14 @@
       var canvas = document.getElementById('paper'),
         c = canvas.getContext('2d')
 
+      var swedishflagbg = new Image()
+      swedishflagbg.src = 'imagens/montanhas.jpg'
+      swedishflagbg.onload = function () {
+        c.drawImage(swedishflagbg, 0, 0, canvas.width, canvas.height)
+      }
+
       var posX = 40,
-        posY = 240,
+        posY = 320,
         pula = false,
         vai = true,
         volta = false
@@ -42,14 +55,14 @@
           posY = posY + 40
           pula = false
         } else {
-          posY = 240
+          posY = 320
           pula = true
         }
 
-        c.fillStyle = 'green'
+        c.fillStyle = 'rgba(1, 1, 1, 0)'
         c.fillRect(0, 0, canvas.width, canvas.height)
 
-        c.fillStyle = 'pink'
+        c.fillStyle = 'white'
         c.beginPath()
         c.arc(posX, posY - 100, 50, 0, Math.PI * 2, false)
         c.fill()
