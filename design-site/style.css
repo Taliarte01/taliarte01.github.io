@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mohave', sans-serif;
+}
+
+#master {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header,
+main,
+footer {
+  width: 980px;
+}
+
+.logo {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(255, 159, 36);
+  width: 126px;
+  height: 122px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 32px;
+  text-decoration: none;
+  margin-right: 60px;
+}
+
+.logo span {
+  font-size: 29px;
+  color: rgb(255, 159, 36);
+}
+
+header {
+  display: flex;
+  padding: 15px 0;
+  align-items: center;
+  position: relative;
+}
+
+#menu ul {
+  list-style: none;
+  display: flex;
+}
+
+#menu ul li {
+  margin-right: 30px;
+}
+
+#menu ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+#basket {
+  position: absolute;
+  right: 0;
+}
+
+#basket img {
+  width: 40px;
+  height: 40px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  padding: 60px 0 0 90px;
+  position: relative;
+}
+
+#content {
+  font-size: 48px;
+  width: 600px;
+  color: rgb(108, 136, 1);
+  position: absolute;
+  right: 30px;
+  padding-top: 70px;
+}
+
+#content a {
+  width: 168px;
+  height: 40px;
+  display: flex;
+  font-size: 22px;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(181, 216, 49);
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+#content a:hover {
+  background-color: #d1cdc9;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+#info {
+  font-size: 12px;
+  color: rgb(0, 0, 0);
+}
+
+main .logo {
+  position: absolute;
+  width: 115px;
+  height: 112px;
+  background-color: rgba(255, 159, 36, 0.5);
+  border-color: transparent;
+  bottom: 180px;
+  left: 145px;
+}
+
+main .logo span {
+  color: rgba(255, 255, 255, 0.5);
+}
