@@ -14,29 +14,29 @@ function limpar() {
   document.getElementById('num2').value = 0
   num1 = 0
   num2 = 0
-  result.value = 0
+  result.innerHTML = 0
 }
 
 function somar() {
   inicializa()
   const soma = num1 + num2
-  result.value = soma
+  result.innerHTML = soma
 }
 
 function subtrair() {
   inicializa()
   const subtracao = num1 - num2
-  result.value = subtracao
+  result.innerHTML = subtracao
 }
 
 function dividir() {
   inicializa()
   const divisao = num1 / num2
-  result.value = divisao
+  result.innerHTML = divisao
 }
 
 function multiplicar() {
   inicializa()
   const multiplicacao = num1 * num2
-  result.value = multiplicacao
+  result.innerHTML = multiplicacao
 }
