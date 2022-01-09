@@ -1,0 +1,14 @@
+.form-group{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.form-line {
+  display: flex;
+  flex-direction: column;
+}
+
+.legenda {
+ margin-right: 10px; 
+}

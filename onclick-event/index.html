@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pesquisa - Taliarte Design</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Pesquisa de satisfação</legend>
+
+        <div class="form-group">
+          <div class="form-line">
+            <label>Seu nome</label>
+            <input type="text" id="nome" />
+          </div>
+
+          <div class="form-line">
+            <label>Seu email</label>
+            <input type="email" id="email" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-line">
+            <label>Como você avalia o atendimento</label>
+            <input
+              type="number"
+              id="aval-atendimento"
+              placeholder="de 0 a 10"
+            />
+          </div>
+
+          <div class="form-line">
+            <label>Como você avalia o nosso serviço</label>
+            <input type="number" id="aval-servico" placeholder="de 0 a 10" />
+          </div>
+
+          <div class="form-line">
+            <label>Como você avalia os nossos funcionários</label>
+            <input
+              type="number"
+              id="aval-funcionarios"
+              placeholder="de 0 a 10"
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-line">
+            <button type="button" onclick="salvaAvaliacao()" id="salvar">
+              Salvar
+            </button>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-line">
+            <button type="reset" onclick="limpaResultados()" id="salvar">
+              Limpar resultados
+            </button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+    <div id="legenda">
+      <fieldset>
+        <legend>Legenda</legend>
+        <span class="legenda">0 - 4 - Ruim</span>
+        <span class="legenda">5 - 7 - Bom</span>
+        <span class="legenda">8 - 10 - Ótimo</span>
+      </fieldset>
+    </div>
+    <div id="resultados"></div>
+  </body>
+
+  <script type="text/javascript" src="script.js"></script>
+</html>
