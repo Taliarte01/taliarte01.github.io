@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="pt-br" />
+    <title>Hamburguer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Monte seu Hamburguer</h1>
+    <section id="cardapio">
+      <form>
+        <fieldset>
+          <legend>Escolha seu Pão:</legend>
+          <div>
+            <label>
+              <input type="radio" name="pao" onclick="tipoPao('frances')" />
+              <span> Pão Francês R$ 3,00</span>
+            </label>
+            <label>
+              <input type="radio" name="pao" onclick="tipoPao('australiano')" />
+              <span> Pão Australiano R$ 8,00</span>
+            </label>
+            <label>
+              <input type="radio" name="pao" onclick="tipoPao('brioche')" />
+              <span> Pão Brioche R$ 6,00</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Escolha seu Hamburguer</legend>
+          <div>
+            <label> 
+              <input type="radio" name="carne" onclick="tipoCarne('picanha', 13)" />
+              <span> Hamburguer de Picanha R$ 13,00</span>
+            </label>
+            <label>
+              <input type="radio" name="carne" onclick="tipoCarne('costela', 10)" />
+              <span>Hamburguer de Costela R$ 10,00</span>
+            </label>
+            <label>
+              <input type="radio" name="carne" onclick="tipoCarne('vegano', 12)" />
+              <span> Hamburguer Vegano R$ 12,00</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Escolha sua Salada</legend>
+          <div>
+            <label>
+              <input type="radio" name="salada" onclick="tipoSalada('alface', 1.5)" />
+              <span>Alface R$ 1,50</span>
+            </label>
+            <label>
+              <input type="radio" name="salada" onclick="tipoSalada('tomate', 1.5)" />
+              <span>Tomate R$ 1,50</span>
+            </label>
+            <label>
+              <input type="radio" name="salada" onclick="tipoSalada('nenhuma', 0)" />
+              <span> Sem Salada R$ 0,00</span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Escolha o tipo de queijo:</legend>
+            <label>
+              <input type="radio" name="queijo" onclick="tipoQueijo('mussarela', 3)" />
+              <span>Mussarela R$ 3,00</span>
+            </label>
+            <label>
+              <input type="radio" name="queijo" onclick="tipoQueijo('prato', 3)" />
+              <span>Prato R$ 3,00</span>
+            </label>
+            <label>
+              <input type="radio" name="queijo" onclick="tipoQueijo('cheddar', 5)" />
+              <span> CheddarR$ 5,00</span>
+            </label>
+          </div>
+        </fieldset>
+      </form>
+      <button onclick="geraPedido()">Envie seu pedido</button>
+    </section>
+    <br />
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Tipo</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody id="tablebody"></tbody>
+    </table>
+  </body>
+</html>
