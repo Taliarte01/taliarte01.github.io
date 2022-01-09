@@ -1,0 +1,28 @@
+#container{
+  display: flex;
+}
+
+#botoes{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 10px;
+}
+
+#numeros{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group{
+  display: flex;
+ justify-content: flex-start;
+ margin-bottom: 5px;
+}
+
+.form-line{
+  display: flex;
+  flex-direction: column;
+}
