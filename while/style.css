@@ -1,0 +1,13 @@
+#quadro {
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  border: 10px brown solid;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}

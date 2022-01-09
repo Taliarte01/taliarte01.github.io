@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="pt-br" />
+    <title>Repetições com while</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <form>
+      <div>
+        <input
+          id="qtdrepeticoes"
+          type="number"
+          placeholder="quantidade de repetições"
+        />
+        <input type="button" value="Começar" id="botao" onclick="lousa()" />
+      </div>
+
+      <br />
+      <div id="qtdlousaapagada"></div>
+      <div id="qtdnalousa"></div>
+      <br />
+
+      <textarea id="quadro" cols="60" rows="20" readonly></textarea>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
