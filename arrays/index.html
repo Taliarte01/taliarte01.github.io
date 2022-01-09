@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="pt-br" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ordernação de arrays</title>
+  </head>
+
+  <body>
+    <h1>Ordenação de arrays</h1>
+    <div id="numeros">
+      <input id="primeiro" type="number" />
+      <input id="segundo" type="number" />
+      <input id="terceiro" type="number" />
+      <input id="quarto" type="number" />
+    </div>
+    <div>
+      <button onclick="armazenar()">Armazenar os números</button>
+      <textarea id="lista-numeros"></textarea>
+    </div>
+    <div>
+      <button onclick="decrescente()">Reorganizar ao contrário</button>
+      <textarea id="decrescente"></textarea>
+    </div>
+    <div>
+      <button onclick="crescente()">Ordenar em crescente</button>
+      <textarea id="crescente"></textarea>
+    </div>
+
+    <div>
+      <button onclick="limparCampos()">Limpar todos</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
