@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jogo da velha</title>
+    <meta charset="utf-8" lang="pt-br" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="iniciaJogo()">
+    <h1>Jogo da velha</h1>
+    <div>
+      <div>
+        <div class="texto">
+          <p>Próximo jogador: <span id="jogador"></span></p>
+        </div>
+        <div class="texto">
+          <p id="ganhador"></p>
+        </div>
+      </div>
+      <div>
+        <div class="grid-container">
+          <div class="grid-item" onclick="selecionar(this,0,0)"></div>
+          <div class="grid-item" onclick="selecionar(this,0,1)"></div>
+          <div class="grid-item" onclick="selecionar(this,0,2)"></div>
+          <div class="grid-item" onclick="selecionar(this,1,0)"></div>
+          <div class="grid-item" onclick="selecionar(this,1,1)"></div>
+          <div class="grid-item" onclick="selecionar(this,1,2)"></div>
+          <div class="grid-item" onclick="selecionar(this,2,0)"></div>
+          <div class="grid-item" onclick="selecionar(this,2,1)"></div>
+          <div class="grid-item" onclick="selecionar(this,2,2)"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
