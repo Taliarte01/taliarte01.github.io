@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" lang="pt-br" />
+    <title>Corrida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Mega Corrida</h1>
+    <div id="linha">
+      <div id="coluna">
+        <button onclick="tipocarro()" id="sortear">Sortear carros</button>
+        <div id="coluna">
+          <p id="caredna"></p>
+          <p id="carpedro"></p>
+          <p id="carjuca"></p>
+        </div>
+      </div>
+      <div id="coluna">
+        <button id="rapida" onclick="rapida()">Corrida Rápida</button>
+        <button id="gp" onclick="gp()">Grande Prêmio</button>
+        <button id="enduro" onclick="enduro()">Enduro</button>
+      </div>
+    </div>
+    <p id="resultado"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
