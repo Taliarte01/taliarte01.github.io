@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  margin: 20px;
+}
+
+h1{
+  color: crimson;
+}
+
+#sortear{
+  background-color: pink; 
+}
+
+#rapida{
+  background-color: rgb(221, 133, 147); 
+}
+
+#gp{
+  background-color: rgb(238, 116, 136); 
+}
+
+#enduro{
+  background-color: rgb(197, 75, 95); 
+}
+
+#coluna {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+#linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border: 5px solid purple;
+}
