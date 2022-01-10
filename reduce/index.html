@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" lang="pt-br" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Metodo Reduce</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Cadastro de Clientes</legend>
+        <div>
+          <div>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" value="" placeholder="Nome Completo" />
+          </div>
+
+          <div>
+            <label for="datavencimento">Data Vencimento:</label>
+            <input
+              type="date"
+              id="datavencimento"
+              value=""
+              placeholder="Data do Vencimento"
+            />
+          </div>
+
+          <div>
+            <label for="valor">Valor:</label>
+            <input
+              type="number"
+              id="valor"
+              value=""
+              placeholder="Valor da Fatura"
+            />
+          </div>
+        </div>
+
+        <div>
+          <input
+            type="button"
+            id="enviar"
+            value="Enviar"
+            onclick="incluircliente()"
+          />
+          <input type="reset" value="Limpar" />
+        </div>
+      </fieldset>
+    </form>
+
+    <h1>Lista de Boletos</h1>
+
+    <table id="tblista">
+      <thead>
+        <tr>
+          <th>Indice</th>
+          <th>Nome</th>
+          <th>Data do Vencimento</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <br />
+    <div id="botoes">
+      <button onclick="funcaojuros()">Calcular Juros</button>
+      <br />
+      <div>
+        <label for="nome">Nome Completo:</label>
+        <input
+          type="text"
+          id="buscapornome"
+          value=""
+          placeholder="Nome Completo"
+        />
+        <button onclick="funcaoagruparcliente()">Agrupar por Cliente</button>
+      </div>
+
+      <div>
+        <label for="datavencimento">Data Vencimento:</label>
+        <input
+          type="date"
+          id="buscarpordatavencimento"
+          value=""
+          placeholder="Data do Vencimento"
+        />
+        <button onclick="funcaoagrupardata()">Agrupar por Data</button>
+      </div>
+    </div>
+    <br />
+    <h1 id="tituloboleto"></h1>
+    <p id="valortotal"></p>
+    <table id="tbjuros">
+      <thead>
+        <tr>
+          <th>Indice</th>
+          <th>Nome</th>
+          <th>Data do Vencimento</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <script src="script.js"></script>
+  </body>
+</html>
