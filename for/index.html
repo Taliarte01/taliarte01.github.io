@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ptBr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="./script.js" defer></script>
+
+    <title>For</title>
+  </head>
+
+  <body>
+    <button onclick="realizarCorrida(10)">Corrida rápida (10 voltas)</button>
+
+    <button onclick="realizarCorrida(70)">Grande Prêmio (70 voltas)</button>
+
+    <button onclick="realizarCorrida(160)">Enduro (160 voltas)</button>
+
+    <input
+      id="voltas"
+      type="text"
+      placeholder="Escolha a quantidade de voltas!"
+      style="width: 17em"
+    />
+    <button onclick="realizarCorrida(document.getElementById('voltas').value)">
+      Correr!
+    </button>
+  </body>
+</html>
