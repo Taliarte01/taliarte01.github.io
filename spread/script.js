@@ -1,3 +1,4 @@
+// resposta A
 numeros = [2, 1, 4, 2]
 
 function multiplica(num1, num2, num3, num4) {
@@ -6,12 +7,14 @@ function multiplica(num1, num2, num3, num4) {
 
 console.log(multiplica(...numeros))
 
+// resposta B
 function concatenaVetores(arr1, arr2) {
   return [...arr1, ...arr2]
 }
 
 console.log(concatenaVetores([1, 3], [1, 4]))
 
+// resposta C
 function maiorValor() {
   const numeros = []
   for (let i = 0; i < 10; i++) {
