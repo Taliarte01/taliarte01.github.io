@@ -104,10 +104,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: -100px;
 }
 
 #titulo > img {
-  height: 200px;
+  height: 150px;
+}
+
+.jogador1, .jogador2 {
+  width: 150px;
+}
+
+#lutador-sele-1, #lutador-sele-2 {
+  width: 200px;
 }
 
 .botoes {

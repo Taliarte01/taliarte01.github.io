@@ -178,4 +178,9 @@ function encerraJogo() {
   for (let botao of botoes) {
     botao.style = 'visibility: hidden;'
   }
+
+  const vidas = document.getElementsByClassName('vida-jogador')
+  for (let vida of vidas) {
+    vida.style = 'visibility: hidden;'
+  }
 }
