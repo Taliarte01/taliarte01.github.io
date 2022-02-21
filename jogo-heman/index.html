@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=J, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mohave:wght@300&family=Roboto:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Jogo luta</title>
+  </head>
+  <body>
+    <p id="instrucao">Selecione os jogadores</p>
+    <div id="titulo">
+      <img
+        class="jogador1"
+        id="heman"
+        src="heman.png"
+        onclick="escolherLutador1('heman')"
+      />
+      <img
+        class="jogador1"
+        id="shera"
+        src="shera.png"
+        onclick="escolherLutador1('shera')"
+      />
+      <img
+        class="jogador1"
+        id="gorpo"
+        src="gorpo.png"
+        onclick="escolherLutador1('gorpo')"
+      />
+
+      <img src="masters.png" />
+
+      <img
+        class="jogador2"
+        id="esqueleto"
+        src="esqueleto.png"
+        onclick="escolherLutador2('esqueleto')"
+      />
+      <img
+        class="jogador2"
+        id="mandibula"
+        src="mandibula.png"
+        onclick="escolherLutador2('mandibula')"
+      />
+      <img
+        class="jogador2"
+        id="homem-fera"
+        src="homem-fera.png"
+        onclick="escolherLutador2('homem-fera')"
+      />
+    </div>
+
+    <div id="iniciar-luta">
+      <button id="botao" onclick="lutar()">FIGHT</button>
+    </div>
+
+    <div id="titulo-vencedor">
+      <p id="vencedor"></p>
+    </div>
+
+    <div id="lutdores-selecionados">
+      <div id="selecao-lutador-1">
+        <button class="botao-atacar" onclick="atacar('jogador1')">
+          Atacar
+        </button>
+        <div class="jogador-selecionado1">
+          <span class="vida-jogador" id="vida-jogador-1">100</span>
+          <img id="lutador-sele-1" />
+        </div>
+      </div>
+
+      <div id="selecao-lutador-2">
+        <div class="jogador-selecionado2">
+          <span class="vida-jogador" id="vida-jogador-2">100</span>
+          <img id="lutador-sele-2" />
+        </div>
+        <button class="botao-atacar" onclick="atacar('jogador2')">
+          Atacar
+        </button>
+      </div>
+    </div>
+
+    <audio autoplay controls id="trilha">
+      <source src="trilha-sonora.ogg" />
+    </audio>
+  </body>
+  <script src="script.js"></script>
+</html>

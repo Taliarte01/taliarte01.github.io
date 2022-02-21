@@ -1,0 +1,119 @@
+* {
+  font-family: 'Mohave', sans-serif;
+}
+
+#selecao-lutador-1,
+#selecao-lutador-2 {
+  visibility: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+
+#selecao-lutador-1 > button {
+  font-size: 30px;
+  color: blue;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 150px;
+  border: 6px solid rgba(0, 110, 255, 0.604);
+}
+
+.jogador-selecionado1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.jogador-selecionado2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.jogador-selecionado1, .jogador-selecionado2 > span {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+
+#selecao-lutador-2 > button {
+  font-size: 30px;
+  color: red;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 150px;
+  border: 6px solid rgba(255, 17, 0, 0.604);
+}
+
+body {
+  background-image: url(arena-ring.jpg);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+}
+
+#iniciar-luta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#instrucao {
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+#iniciar-luta > button {
+  font-size: 30px;
+  color: green;
+  font-weight: bold;
+  border-radius: 10px;
+  width: 150px;
+  border: 6px solid rgba(13, 255, 0, 0.604);
+}
+
+#iniciar-luta > button:hover {
+  color: rgb(12, 245, 12);
+  background-color: rgba(179, 175, 156, 0.912);
+}
+
+.botao-atacar {
+  visibility: hidden;
+}
+
+#titulo-vencedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#titulo-vencedor > p {
+  font-size: 50px;
+  color: white;
+}
+
+#lutdores-selecionados {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#titulo > img {
+  height: 200px;
+}
+
+.botoes {
+  height: 50px;
+  width: 100px;
+  background-color: rgb(72, 129, 216);
+  font-family: fantasy;
+  font-size: 15px;
+}
