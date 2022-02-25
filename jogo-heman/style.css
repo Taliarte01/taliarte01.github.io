@@ -15,7 +15,7 @@
   font-weight: bold;
   border-radius: 10px;
   width: 150px;
-  border: 6px solid rgba(0, 110, 255, 0.604);
+  border: 6px solid blue;
 }
 
 .jogador-selecionado1 {
@@ -56,6 +56,54 @@ body {
   align-items: center;
   justify-content: space-between;
   align-self: center;
+  margin-top: -40px;
+}
+
+#trilha {
+  height: 30px;
+  width: 100px;
+}
+.vida-jogador {
+  visibility: hidden;
+}
+
+#barra-vida-1 {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  border: 5px solid blue;
+  width: 200px;
+  height: 20px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+#barra-vida-2 {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  border: 5px solid red;
+  width: 200px;
+  height: 20px;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+#vida-jogador-1 {
+  width: 200px;
+  height: 40px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+}
+
+#vida-jogador-2 {
+  border: 1px solid red;
+  width: 200px;
+  height: 40px;
+  background-color: red;
+  display: flex;
+  justify-content: center;
 }
 
 #iniciar-luta {
@@ -69,9 +117,10 @@ body {
   justify-content: center;
   font-size: 24px;
   color: white;
+  font-family: cursive ;
 }
 
-#iniciar-luta > button {
+#iniciar-luta :nth-child(1) {
   font-size: 30px;
   color: green;
   font-weight: bold;
@@ -80,7 +129,7 @@ body {
   border: 6px solid rgba(13, 255, 0, 0.604);
 }
 
-#iniciar-luta > button:hover {
+#iniciar-luta :nth-child(1):hover {
   color: rgb(12, 245, 12);
   background-color: rgba(179, 175, 156, 0.912);
 }
@@ -98,6 +147,7 @@ body {
 #titulo-vencedor > p {
   font-size: 50px;
   color: white;
+  font-family: fantasy;
 }
 
 #lutdores-selecionados {
@@ -112,11 +162,11 @@ body {
 }
 
 .jogador1, .jogador2 {
-  width: 150px;
+  width: 120px;
 }
 
 #lutador-sele-1, #lutador-sele-2 {
-  width: 200px;
+  width: 250px;
 }
 
 .botoes {
@@ -125,4 +175,19 @@ body {
   background-color: rgb(72, 129, 216);
   font-family: fantasy;
   font-size: 15px;
+}
+
+#iniciar-luta :nth-child(2) {
+  display: none;
+  font-size: 30px;
+  color: rgb(117, 0, 128);
+  font-weight: bold;
+  border-radius: 10px;
+  width: 150px;
+  border: 6px solid rgba(119, 0, 255, 0.604);
+}
+
+#iniciar-luta :nth-child(2):hover {
+  color: rgb(148, 12, 245);
+  background-color: rgba(179, 175, 156, 0.912);
 }

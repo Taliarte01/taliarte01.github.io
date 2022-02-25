@@ -14,7 +14,7 @@
     <title>Jogo luta</title>
   </head>
   <body>
-    <p id="instrucao">Selecione os jogadores</p>
+    <p id="instrucao">Vamos Jogar? Selecione os jogadores</p>
     <div id="titulo">
       <img
         class="jogador1"
@@ -59,6 +59,7 @@
 
     <div id="iniciar-luta">
       <button id="botao" onclick="lutar()">FIGHT</button>
+      <button id="comecar" onclick="fightAgain()">RESET</button>
     </div>
 
     <div id="titulo-vencedor">
@@ -71,14 +72,18 @@
           Atacar
         </button>
         <div class="jogador-selecionado1">
-          <span class="vida-jogador" id="vida-jogador-1">100</span>
+          <div id="barra-vida-1">
+            <span class="vida-jogador" id="vida-jogador-1"></span>
+          </div>
           <img id="lutador-sele-1" />
         </div>
       </div>
 
       <div id="selecao-lutador-2">
         <div class="jogador-selecionado2">
-          <span class="vida-jogador" id="vida-jogador-2">100</span>
+          <div id="barra-vida-2">
+            <span class="vida-jogador" id="vida-jogador-2"></span>
+          </div>
           <img id="lutador-sele-2" />
         </div>
         <button class="botao-atacar" onclick="atacar('jogador2')">
@@ -86,8 +91,7 @@
         </button>
       </div>
     </div>
-
-    <audio autoplay controls id="trilha">
+    <audio id="trilha" autoplay controls>
       <source src="trilha-sonora.ogg" />
     </audio>
   </body>
